@@ -21,11 +21,11 @@ mcv_value = cbc.mcv(hct=0.45, rbc=5.2e6)
 # Calculate MCH
 mch_value = cbc.mch(hb=14, rbc=5.2e6)
 
-# Adult reference Range for MCV and MCH
+# Adult reference range for MCV and MCH
 reference_range["Adult"]["MCV"]
 reference_range["Adult"]["MCH"]
 
-# Adult age reference Range for MCH and MCH
+# Adult age reference range for MCH and MCH
 reference_range[18]["MCV"]
 reference_range[18]["MCH"]
 ```
