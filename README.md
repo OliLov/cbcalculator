@@ -5,15 +5,15 @@ CBCalculator is a Python package designed to calculate various metrics from Comp
 To install CBCalculator, run the following command:
 
 ```bash
-pip install CBCalculator
+pip install cbcalculator
 ```
 
 ## Usage
 Here is how you can use the CBCalculator package:
 
 ```python
-from CBCalculator.blood_metrics import cbc_metrics as cbc
-from CBCalculator.blood_values import reference_range
+import cbcalculator as cbc
+from cbcalculator import reference_range
 
 # Calculate MCV
 mcv_value = cbc.mcv(hct=0.45, rbc=5.2e6)
@@ -21,11 +21,13 @@ mcv_value = cbc.mcv(hct=0.45, rbc=5.2e6)
 # Calculate MCH
 mch_value = cbc.mch(hb=14, rbc=5.2e6)
 
-# Reference Range for MCV
+# Adult reference Range for MCV and MCH
 reference_range["Adult"]["MCV"]
-
-# Reference Range for MCH
 reference_range["Adult"]["MCH"]
+
+# Adult age reference Range for MCH and MCH
+reference_range[18]["MCV"]
+reference_range[18]["MCH"]
 ```
 
 ## Features
@@ -45,3 +47,6 @@ reference_range["Adult"]["MCH"]
 Contributions to CBCalculator are highly appreciated, whether they come in the form of code improvements, bug reports, or documentation updates. This project, particularly, welcomes assistance from medical professionals or hematologists for verifying the medical accuracy of the calculations and reference data.
 
 If you're a medical expert and notice any discrepancies or potential improvements in the medical content of this package, please feel free to correct them or suggest changes. This kind of contribution is invaluable to ensure that CBCalculator provides reliable and accurate information.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
