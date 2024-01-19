@@ -1,19 +1,19 @@
-# CBCalculator
-CBCalculator is a Python package designed to calculate various metrics from Complete Blood Count (CBC) tests. This package provides functionalities to compute key hematological parameters such as Mean Corpuscular Volume (MCV), Mean Corpuscular Hemoglobin (MCH), and Neutrophil to Lymphocyte Ratio (NLR), among others. It also includes reference ranges for a comprehensive list of CBC metrics across different age groups.
+# PyCBCount
+PyCBCount is a Python package designed to calculate various metrics from Complete Blood Count (CBC) tests. This package provides functionalities to compute key hematological parameters such as Mean Corpuscular Volume (MCV), Mean Corpuscular Hemoglobin (MCH), and Neutrophil to Lymphocyte Ratio (NLR), among others. It also includes reference ranges for a comprehensive list of CBC metrics across different age groups.
 
 ## Installation
-To install CBCalculator, run the following command:
+To install pycbcount, run the following command:
 
 ```bash
-pip install cbcalculator
+pip install pycbcount
 ```
 
 ## Usage
-Here is how you can use the CBCalculator package:
+Here is how you can use the pycbcount package:
 
 ```python
-import cbcalculator as cbc
-from cbcalculator import reference_range
+import pycbcount as cbc
+from pycbcount import reference_range
 
 # Calculate MCV
 mcv_value = cbc.mcv(hct=0.45, rbc=5.2e6)
@@ -44,9 +44,9 @@ reference_range[18]["MCH"]
 - **Reference Ranges:** [Complete Blood Count (Wikipedia)](https://en.wikipedia.org/wiki/Complete_blood_count)
 
 ## Contributing
-Contributions to CBCalculator are highly appreciated, whether they come in the form of code improvements, bug reports, or documentation updates. This project, particularly, welcomes assistance from medical professionals or hematologists for verifying the medical accuracy of the calculations and reference data.
+Contributions to pycbcount are highly appreciated, whether they come in the form of code improvements, bug reports, or documentation updates. This project, particularly, welcomes assistance from medical professionals or hematologists for verifying the medical accuracy of the calculations and reference data.
 
-If you're a medical expert and notice any discrepancies or potential improvements in the medical content of this package, please feel free to correct them or suggest changes. This kind of contribution is invaluable to ensure that CBCalculator provides reliable and accurate information.
+If you're a medical expert and notice any discrepancies or potential improvements in the medical content of this package, please feel free to correct them or suggest changes. This kind of contribution is invaluable to ensure that pycbcount provides reliable and accurate information.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

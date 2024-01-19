@@ -1,4 +1,4 @@
-"""Setup for CBCalculator."""
+"""Setup for PyCBCount."""
 from setuptools import find_packages, setup
 
 with open("README.md", "r", encoding="utf-8") as file:
@@ -7,12 +7,12 @@ with open("README.md", "r", encoding="utf-8") as file:
 DESC = "A Python package for calculating Complete Blood Count (CBC) metrics"
 
 setup(
-    name="cbcalculator",
+    name="pycbcount",
     version="0.0.1",
     description=DESC,
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/OliLov/CBCalculator",
+    url="https://github.com/OliLov/pycbcount",
     author="Oliver Lövström",
     author_email="oliver.lovstrom@gmail.com",
     classifiers=[

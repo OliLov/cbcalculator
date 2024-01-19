@@ -1,4 +1,4 @@
-"""CBCalculator."""
+"""PyCBCount."""
 from .blood_values import reference_range
 from .cbc_metrics import alc, anc, mch, mchc, mcv, nlr
 
